@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Website - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>E-commerce Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="home">
+    <div class="background-image"><img src="img2.jpg" alt="image"></div>
+    <div class="content">
+      <h2>Welcome to our E-commerce Store</h2>
+      <p style="text-align: center;">Discover the Taste of Nature! Our E-commerce Fruit Emporium
+         is your one-stop destination for premium, farm-fresh fruits. Dive into a world of vibrant 
+         colors, exquisite flavors, and wholesome nutrition. Each fruit is carefully selected to 
+         bring you the finest produce. Start your journey to a healthier you—shop now!</p>
+      <button onclick="loadHomeContent()">Learn More</button>
+    </div>
+  </section>
+  <section class="about">
+    <div class="content">
+      <div class="about-item">
+        <img src="apple.jpg" alt="image" height="200px" width="50vw">
+        <p style="text-align: center;">Indulge in the crisp, irresistible taste of our apples,
+          a symphony of sweetness and crunch in every bite. Packed with essential nutrients
+           and natural goodness, our apples are nature's perfect snack. Elevate your health 
+           and satisfy your cravings with the freshest, juiciest apples—orchard-fresh delight
+            for a vibrant lifestyle</p>
+      </div><br><button onclick="loadAboutContent()" style="margin-left: 350px;">Shop Now</button>
+      <div class="about-item">
+        <img src="orange.jpg" alt="image">
+        <p style="text-align: center;">Savor the succulent perfection of our oranges 
+           nature's gift to your well-being. Bursting with exquisite flavor and a
+           burst of vitamin C, our oranges promise a daily dose of refreshment and 
+           vitality. Elevate your taste experience with the juiciest, healthiest oranges,
+            a testament to pure, delicious goodness in every bite</p>
+      </div>
+      <button onclick="loadAboutContent()"style="margin-left: 350px;">Shop Now</button>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="address">Message</label>
+        <input type="text" id="address" name="address" placeholder="Write Message" required>
+
+        <button type="submit" onclick="submitForm()">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

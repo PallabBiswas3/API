@@ -1,0 +1,101 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(209, 243, 159);
+  color: black;
+  padding: 1em;
+  text-align: center;
+}
+
+nav {
+  background-color: #444;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Specific styles for each section */
+.home {
+  position: relative;
+}
+.about{
+  flex-wrap: wrap;
+}
+.home .background-image {
+  
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.home .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.about-item {
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.about-item img {
+  width: 100%;
+  border-radius: 20px;
+  height: 100vh;
+}
+
+.contact {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
